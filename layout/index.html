@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SnusShop</title>
+     <link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="shortcut icon" href="img/snus_shop.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+	<nav class="menu_mobile navbar navbar-expand-lg navbar-light" style="background-color:#25B1C4">
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+  	<div class="collapse navbar-collapse" name="header" id="navbar1">
+    	<ul class="navbar-nav mr-auto menu">
+      		<li class="nav-item active">
+        		<a class="nav-link text-white menu__item" href="#features">О Нас</a>
+      		</li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-white menu__item" href="#order_1">Сделать заказ</a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-white menu__item" href="#features_delivery">Доставка и Оплата</a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-white  menu__item" href="#footer">Контакты</a>
+		    </li>    		
+    	</ul>
+    	<ul class="navbar-nav mr-auto menu_social">
+		    <li class="nav-item">
+		    	<a class="cart nav-link text-success menu_social__item" href="#order_1"><img class="img_cart" src="img/shopping-cart (1).png" alt=""></a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-success menu_social__item" href="#gallery_phone"><a href="https://www.instagram.com/formula_stroinosti74/"><img src="img/instagram-logo.png" alt=""></a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-success menu_social__item" href="#map"><a href="https://vk.com/formula_74"><img src="img/vk-social-network-logo.png" alt=""></a></a>
+		    </li>
+    	</ul>
+  	</div>
+</nav>	
+	</header>
+
+
+	<section id="big" class="big">
+		<div class="big__text"><pre>
+			<h1>Покупайте ваш любимый 
+   Cold Dry у нас 
+   по выгодной цене!
+           </h1>
+            </pre>
+		</div>
+		<div class="big__pic">
+			<img class="big__img" src="img/snus-600-600.png" alt="Cold Dry">
+		</div>
+	</section>
+
+	<section id="features" class="features">
+		<div class="feature">
+			<h3>Вы можете выбрать предпочтительный для вас способ доставки</h3>
+			<img src="img/delivery-truck.png" alt="">
+		</div>
+
+		<div class="feature">
+			<h3>Чем больше покупаете, тем больше скидка</h3>
+			<img src="img/discount.png" alt="">
+		</div>
+
+		<div class="feature">
+			<h3>У Нас всегда
+ свежий товар!</h3>
+			<img src="img/tick-inside-circle.png" alt="">
+		</div>
+
+	</section>
+          <section id="order_1"><h2>Заказ</h2></section>
+	<section class="order">
+		<div class="piece">
+		<p class="piece__name">Odens Cold Dry 10гр
+        </p>
+        <img src="img/odens-cold-dry.png" alt="Snus">
+        <p class="piece__price">300 руб.</p>
+       <div class="piece_amount_select">
+        <div><p class="piece__amount">Кол-во:</p></div>
+        <div><select class="piece__select" size="1" required>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   <option>5</option>
+   <option>6</option>
+   <option>7</option>
+   <option>8</option>
+   <option>9</option>
+   <option>10</option>
+  </select>
+  </div>
+  </div>
+  <br>
+  <button class="piece__button">В корзину</button>
+  <pre><p class="piece__total">Итого: <input name="total" type="text" class="total" style="width: 140px"> +
+доставка(200руб)=</p></pre><br>
+  <input name="total" type="text" class="total_delivery_price" style="width: 140px">
+
+          </div>
+          <div class="address">
+          	<form name="request" method="POST" action="php/function-send-form.php" class="sendler"> 
+            <p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="Телефон"></p>
+          	<p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="E-mail"></p>
+          	<p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="Имя и Фамилия"></p>
+          	<p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="Город"></p>
+          	<p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="Адрес"></p>
+          	<p><input confirminfo=".response" class="adres Y-required" type="text" required placeholder="Индекс"></p>
+          	</form>
+          </div>   
+          <div class="delivery">
+    <p class="delivery__method">Выберите способ доставки</p>
+             <div class="radioblock">
+			<div class="radio">Курьер(только по Челябинску)</div>
+			<div class="radio">Почта России</div>
+			<div class="radio">Другая служба доставки</div>
+			<div class="clear"></div>
+			
+			<input type="hidden" id="radion" />
+		</div><br>
+
+  <p class="delivey__pay">Выберите способ оплаты</p><br>
+   <div class="radioblock">
+			<div class="radio">Оплата при получении</div>
+			<div class="radio">Оплата на карту Сбербанка</div>
+			<div class="clear"></div>
+			
+			<input type="hidden" id="radion" />
+		</div>
+ 
+  <button class="main_button" type="submit" name="submitbtn"><p>Заказать</p></button>
+          </div> 
+         	</section>
+
+  <section id="features_delivery" class="features_delivery">
+  	<div class="shipping">
+  		<p >Доставка</p>
+  		<div class="container">
+  			<img src="img/courier (1).png" alt="">
+  			<p>Доставка курьером по Челябинску</p>
+  		</div>
+  		<div class="container">
+  			<img src="img/Russian_Post_logo.png" alt="">
+  			<p>Доставка Почтой России</p>
+  		</div>
+  		<div class="container">
+  			<img src="img/delivery-truck (1).png" alt="">
+  			<p>Удобная вам служба доставки</p>
+  		</div>
+
+  	</div>
+  	<div class="payment">
+  		<p class="first_p">Оплата</p>
+  		<div class="container">
+  			<img src="img/give-money.png" alt="">
+  			<p>Оплата при получении</p>
+  		</div>
+  		<div class="container">
+  			<img src="img/images.png" alt="">
+  			<p>Оплата на карту Сбербанк</p>
+  		</div>
+  		  	</div>
+  </section>
+
+
+
+  <footer id="footer">
+  	<h2>Контакты</h2>
+  	<div class="footer_container">
+  			<a href=""><img src="img/whatsapp-logo (1).png" alt=""></a>
+  			<a href=""><a>+7(999)583-45-71</a>
+  		</div>
+  		<div class="footer_container">
+  			<a href=""><img src="img/envelope.png" alt=""></a>
+  			<a>snuscolddry@mail.ru</a>
+  		</div>
+  		<div class="footer_container">
+  			<a href=""><img src="img/instagram-logo (1).png" alt=""></a>
+  			<a>snuscolddry</a>
+  		</div>
+  		</footer>
+  	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+  		
+  		<script>
+$(".piece__button").click(function(){
+        var unitCost=300;
+        var amount=$('.piece__select').val();
+        var total_price=amount*unitCost;
+        $('.total').val(total_price);
+        var total_delivery=total_price+200;
+        $('.total_delivery_price').val(total_delivery);
+});
+      </script>
+
+
+
+         <script type="text/javascript">
+ $(document).ready(function(){
+    $(".nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+<script>  
+  $(document).ready(function(){
+    $(".main_button").on("click","a", function (event) {
+        event.preventDefault();
+        var values = $("input[class='adres']")
+        .map(function(){return $(this).val();
+        });
+      });
+    });
+</script>
+<script>
+$(document).ready(function(){
+	//Reset form
+	// Вешаем событие клика по кнопке сброса
+	$('.reset-form').click(function() {
+		// Устанавливаем пустое значение в атрибут value для всех инпутов
+		$('.customForm').find('input').val('');
+		
+		// Убираем атрибут checked и класс активности у чекбоксов
+		$('.customForm').find('input:checked').removeAttr('checked');
+		$('.customForm').find('.check').removeClass('active');
+		
+		// Убираем класс активности у радио переключателей
+		$('.customForm').find('.radio').removeClass('active');
+		
+		// Устанавливаем пустое значение в атрибут value для всех textarea
+		$('.customForm').find('textarea').val('');
+		
+		// И для открывалки селекта возвращаем начальное значение
+		$('.customForm').find('.slct').html('Выберите Ваше лучшее качество:');
+	});
+	
+	// = Load
+	// отслеживаем изменение инпута file
+	$('#file').change(function(){
+		// Если файл прикрепили то заносим значение value в переменную
+		var fileResult = $(this).val();
+		// И дальше передаем значение в инпут который под загрузчиком
+		$(this).parent().find('.fileLoad').find('input').val(fileResult);
+	});
+
+	/* Добавляем новый класс кнопке если инпут файл получил фокус */
+	$('#file').hover(function(){
+		$(this).parent().find('button').addClass('button-hover');
+	}, function(){
+		$(this).parent().find('button').removeClass('button-hover');
+	});
+	
+	// Checkbox
+	// Отслеживаем событие клика по диву с классом check
+	$('.checkboxes').find('.check').click(function(){
+		// Пишем условие: если вложенный в див чекбокс отмечен
+		if( $(this).find('input').is(':checked') ) {
+			// то снимаем активность с дива
+			$(this).removeClass('active');
+			// и удаляем атрибут checked (делаем чекбокс не отмеченным)
+			$(this).find('input').removeAttr('checked');
+		
+		// если же чекбокс не отмечен, то
+		} else {
+			// добавляем класс активности диву
+			$(this).addClass('active');
+			// добавляем атрибут checked чекбоксу
+			$(this).find('input').attr('checked', true);
+		}
+	});
+		
+	// Select
+	$('.slct').click(function(){
+		/* Заносим выпадающий список в переменную */
+		var dropBlock = $(this).parent().find('.drop');
+		
+		/* Делаем проверку: Если выпадающий блок скрыт то делаем его видимым*/
+		if( dropBlock.is(':hidden') ) {
+			dropBlock.slideDown();
+			
+			/* Выделяем ссылку открывающую select */
+			$(this).addClass('active');
+			
+			/* Работаем с событием клика по элементам выпадающего списка */
+			$('.drop').find('li').click(function(){
+				
+				/* Заносим в переменную HTML код элемента 
+				списка по которому кликнули */
+				var selectResult = $(this).html();
+				
+				/* Находим наш скрытый инпут и передаем в него 
+				значение из переменной selectResult */
+				$(this).parent().parent().find('input').val(selectResult);
+				
+				/* Передаем значение переменной selectResult в ссылку которая 
+				открывает наш выпадающий список и удаляем активность */
+				$('.slct').removeClass('active').html(selectResult);
+				
+				/* Скрываем выпадающий блок */
+				dropBlock.slideUp();
+			});
+			
+		/* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
+		} else {
+			$(this).removeClass('active');
+			dropBlock.slideUp();
+		}
+		
+		/* Предотвращаем обычное поведение ссылки при клике */
+		return false;
+	});	
+		
+	// RadioButton
+	$('.radioblock').find('.radio').click(function(){
+		var valueRadio = $(this).html();
+		$(this).parent().find('.radio').removeClass('active');
+		$(this).addClass('active');
+		$(this).parent().find('input').val(valueRadio);
+	});
+		
+});
+</script>
+
+
+
+
+
+</body>
+</html>

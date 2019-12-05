@@ -1,0 +1,631 @@
+html{
+	overflow-x: hidden; 
+}
+body{
+	font-family: 'Didact Gothic', sans-serif;
+	outline: none;
+	width: 100%;
+	
+}
+.container{
+	max-width: 1090px;
+	margin: 0 auto;
+
+}
+header{
+	background: #25B1C4;
+
+}
+ul,li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none !important;
+	transition: all 0.5s ease !important;
+}
+h1{
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 48px;
+	color: #F4F4F4 !important;
+	font-weight: bold !important;
+}
+h2{
+	color: #25B1C4 !important;
+	font-size: 40px !important;
+	text-align: center !important;
+}
+h3{
+	font-weight: bold !important;
+   color: #11899A !important;
+}
+
+.nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.menu{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 30px 0 20px 350px ;
+
+}
+.menu__item{
+margin-right: 20px;
+}
+.menu__item a{
+color: #F4F4F4 !important;
+font-size: 18px !important;
+white-space: nowrap !important;
+}
+.menu__item:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+.menu_social{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+
+}
+.menu_social__item{
+	margin-right: 30px;
+}
+
+.menu_social__item img:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease;
+	color: blue;
+}
+
+.big{
+	background: #25B1C4 url(../img/daylight-environment-forest-459225.jpg) no-repeat;
+    background-position: center center;
+    background-attachment: fixed;    
+    background-size: cover;
+    display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: center; 
+}
+.big__pic img{
+	display: block;
+    max-width: 400px;
+    margin: 30px 0 30px 0;
+       
+}
+.big__text{
+	 margin: 40px 80px;
+}
+.features{
+	background: #D5EEF2 ;
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.feature{
+    margin-top: 70px;
+    width: 238px;
+    height: 285px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+}
+
+.feature h3{
+	text-align: center;
+	margin-top: 30px;
+}
+#order_1{
+	height: 100%;
+    width: 100%;
+	background: rgba(244, 244, 244, 0.36);
+}
+.order{
+	background: rgba(244, 244, 244, 0.36);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+.order h2{
+	text-align: center;
+}
+.piece{
+	margin-right: 106px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+.piece__name{
+color: #11899A;
+font-size: 24px;
+font-weight: bold;
+}
+.piece img{
+}
+.piece img:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+
+}
+.piece__price{
+	color: #F54141;
+	font-size: 24px;
+	font-weight: bold;
+}
+.piece_amount_select{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+    
+}
+.piece__amount, .total_delivery_price{
+	color: #11899A;
+	font-size: 24px;
+	font-weight: bold;
+}
+.piece__select{
+	background: #FFFFFF;
+    border: 1px solid #969090;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #969090;
+    font-size: 24px;
+    position: relative;
+    margin-left: 10px;
+  
+
+
+}
+.piece__button{
+	padding: 13px 22px;
+	color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+	background: #F54141;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin: 22px 0 30px 0;
+}
+.piece__button:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+.piece__total{
+color: #11899A;
+font-size: 36px;
+font-weight: bold;
+}
+.address{
+	margin-right: 113px;
+}
+
+
+
+.address input{
+	margin-bottom: 27px;
+    width: 289px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #969090;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #969090;
+    z-index: 2;
+    display: block;
+    padding: 10px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+.delivery__method{
+color: #11899A;
+font-size: 24px;
+font-weight: bold;
+}
+.delivery__method input p{
+color: #25B1C4;
+font-size: 18px;
+font-weight: bold;
+}
+.delivey__pay{
+	color: #11899A;
+font-size: 24px;
+font-weight: bold;
+padding-top: 40px;
+}
+.delivey__pay input p{
+	color: #25B1C4;
+font-size: 18px;
+font-weight: bold;
+}
+input.total, .total_delivery_price{
+	color: #11899A;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+    outline: 0;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    border: solid 2px #11899A;
+}
+.total_delivery_price{
+	margin: -30px 0 30px 0;
+
+}
+
+
+.features_delivery{
+	background: rgba(17, 137, 154, 0.72);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+}
+.container p{
+	font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.shipping:first-child{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.footer_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 21px;
+    margin-top: 30px;
+}
+.footer_container a{
+color: #25B1C4 !important; 
+font-size: 24px;
+font-weight: bold;
+margin-left: 7px;
+}
+
+.main_button {
+    background: #25B1C4;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 50px;
+}
+.main_button:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+.first_p{
+    color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*Checkbox*/
+
+/* Sprite */
+.radio{
+	background: url(sprite.png) 0 0 no-repeat;
+}
+/* = Переключатели Radio Button */
+.radio {
+	display: block;
+	height: 25px;
+	background-position: 0 -56px;
+	color: #969090;;
+	cursor: pointer;
+	text-indent: 22px;
+	font-size: 13px;
+	font-weight: bold;	
+}
+.radio.active {
+	background-position: 0 -86px;
+}
+.radio.error {
+	border-color: #ff0000;
+}
+.clear { clear: borth; margin-top: -1px; height: 1px;}
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* 
+По умолчанию пишем стили для больших экранов. 
+Desktop - настольный компьютер, с разрешение от 1200px и более. 
+*/
+
+
+/* Large Devices, Wide Screens */
+/* Для экранов с шириной 1999px и менее. Ноутбуки (Laptop) */
+@media only screen and (max-width : 1190px) {
+.menu_social{
+	margin-left: 5px;
+}
+.features_delivery{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+#footer{
+	justify-content: center;
+}
+.big__pic img{
+	width: 350px;
+	height: 350px;
+}
+.big{
+text-align: -webkit-center;
+width: 100%;
+}
+.radio{
+	margin-bottom: 20px;
+}
+.delivery{
+	margin-left: -80px;
+}
+
+}
+
+
+
+@media only screen and (max-width : 1430px) {
+	.big__pic img{
+		width: 300px;
+		height: 300px;
+	}
+	.menu{
+		margin: 0;
+		justify-content: center;
+	}
+	.main_button{
+		background: #25B1C4;
+		border: 3px solid #FFFFFF;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 50px;
+		margin-top: 25px;
+		margin-left: 20px;
+		color: #FFFFFF;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0px 20px;
+		display: flex;
+		justify-content: center;
+	}
+	.address input{
+		width: 200px;
+	}
+	.piece{
+		margin-right: 60px;
+	}
+}
+
+@media only screen and (max-width : 1230px) {
+	.big__pic img{
+	width: 230px;
+	height: 230px;
+	}
+    h1{
+     font-size: 40px;	
+  }
+  .nav{
+	  margin: 0 auto;
+  }
+  .features_delivery{
+	justify-content: space-evenly;
+}
+   .footer_container{
+	margin-left: 150px;
+}
+.radio{
+	margin-bottom: 20px;
+}
+
+}
+
+
+/* Medium Devices, Desktops */
+/* Для экранов с шириной 991px и менее. Планшеты (Tablets) */
+@media only screen and (max-width : 991px) {
+.features_delivery{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.first_p, .shipping p{
+	display: flex;
+	justify-content: center;
+}
+.shipping .container, .payment .container{
+	margin-top: 30px;
+}
+
+.order{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.address{
+	margin-right: 0;
+}
+.main_button {
+	margin: 20px 0 25px 0;
+	padding: 0 40px;
+}
+.delivey__pay{
+	padding-top: 0;
+}
+.piece img{
+	transform: scale(1.3);
+}
+}
+.address input{
+	width: 300px;
+	padding: 30px;
+}
+.radio{
+	font-size: 17px;
+}
+.feature{
+	justify-content: space-evenly; 
+}
+.piece__price{
+	margin-top: 20px;
+}
+
+
+/* Small Devices, Tablets */
+/* Для экранов с шириной 890px и менее. Планшеты (Tablets) и большие смартфоны. */
+@media only screen and (max-width : 890px) {
+.footer_container{
+  margin-left: 70px;
+}
+.big{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+    justify-content: center;
+}
+.feature h3 {
+    font-size: 20px;
+}
+.big img{
+	width: 300px;
+    height: 300px;
+    margin-top: -100px;
+}
+
+}
+
+@media only screen and (max-width : 700px) {
+h1{
+	font-size: 25px !important;
+}
+}
+
+/* Extra Small Devices, Phones */
+/* Для экранов с шириной 480px и менее. Смартфоны */
+@media only screen and (max-width : 480px) {
+	.footer_container{
+		margin: 20px 0;
+		display: flex;
+		justify-content: center;	
+	}
+	.features{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: column;
+		justify-content: start;
+	}
+	.feature{
+		margin-bottom: -40px;
+	}
+	.feature img{
+		margin-top: -30px;
+	}
+	.feature:last-child{
+		margin-bottom: 30px;
+	}
+	.piece__total{
+		font-size: 26px;
+	}
+	.delivery {
+    margin-left: 0;
+    }
+    h1 {
+    font-size: 26px;  
+}
+.piece img {
+    transform: scale(0.9);
+}
+input.total, .total_delivery_price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.address input {
+    width: 250px;
+    padding: 30px;
+}
+.big img{
+	width: 200px;
+    height: 200px;
+    margin-top: -70px;
+}
+h1 {
+    font-size: 20px !important;
+}
+}
+
+/* Custom, iPhone Retina */
+/* Для экранов с шириной 320px и менее. Смартфоны */
+@media only screen and (max-width : 350px) {
+.piece__total{
+		font-size: 20px;
+	}
+}
